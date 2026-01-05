@@ -1,0 +1,15 @@
+---
+layout: default
+title: Gallery
+---
+<div class="photo-grid">
+    {% if site.data.photos %}
+        {% for photo in site.data.photos %}
+        <div class="grid-item" data-caption="{{ photo.caption }}">
+            <img src="{{ photo.image | relative_url }}" alt="Travel Photo" onerror="this.style.display='none'">
+        </div>
+        {% endfor %}
+    {% else %}
+        <p style="text-align:center; padding: 20px;">⚠️ No data found. Did you restart the server?</p>
+    {% endif %}
+</div>

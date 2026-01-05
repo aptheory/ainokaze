@@ -1,0 +1,24 @@
+---
+layout: default
+title: Updates
+---
+<div class="feed-container">
+    {% for post in site.posts %}
+    <a href="{{ post.url | relative_url }}" class="tweet-card">
+        <div class="tweet-avatar">
+            🗻
+        </div>
+        <div class="tweet-content">
+            <div class="tweet-header">
+                <span class="tweet-name">ap16-ai</span>
+                <span class="tweet-handle">@aptheory</span>
+                <span class="tweet-date">· {{ post.date | date: "%b %d" }}</span>
+            </div>
+            <div class="tweet-body">
+                {{ post.title }}
+                {{ post.excerpt | strip_html | truncatewords: 30 }}
+            </div>
+        </div>
+    </a>
+    {% endfor %}
+</div>

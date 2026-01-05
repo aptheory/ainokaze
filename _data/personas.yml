@@ -1,0 +1,31 @@
+# _data/personalities.yml
+
+- title: "Bana-chan"
+  description: "Cyber-monkey hero vowed to protect everyone"
+  image: "/assets/images/bana-chan.png" # Replace with your own image path
+  tags: ["BANANA", "HERO"]
+
+- title: "Banako"
+  description: "Searching for the hill of silence"
+  image: "/assets/images/banako.png" # Replace with your own image path
+  tags: ["GIRLY", "FLOWER"] # Note the self-referential joke :)
+
+- title: "Ja Bana"
+  description: "ท่องเอาไว้ในใจ อ๊ะส์!"
+  image: "/assets/images/{}.png" # Replace with your own image path
+  tags: ["DANCE", "SING"]
+
+- title: "Bana-san"
+  description: "日本語お上手ですね"
+  image: "/assets/images/bana-san.png" # Replace with your own image path
+  tags: ["JAPANESE", "KANJI MASTER"]
+
+- title: "General Bana"
+  description: "The leader"
+  image: "/assets/images/bana-general.png" # Replace with your own image path
+  tags: ["DISCIPLINE", "ORDER"]
+
+- title: "Bana-chan (Chemist)"
+  description: "Master at natural compound extractions"
+  image: "/assets/images/bana-chemist.png" # Replace with your own image path
+  tags: ["MPLC", "PTLC"]

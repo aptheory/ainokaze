@@ -1,0 +1,28 @@
+---
+layout: default
+title: Persona
+---
+<div class="persona-grid"> 
+    {% for persona in site.data.personas %}
+    <div class="persona-card">
+        
+        <div class="card-image-wrapper">
+            <img src="{{ persona.image | relative_url }}" alt="{{ persona.title }}" class="card-image">
+        </div>
+        
+        <div class="card-glass-overlay"> 
+            <div class="card-content">
+                
+                <h2 class="card-title">{{ persona.title }}</h2>
+                <p class="card-description">{{ persona.description }}</p>
+                
+                <div class="card-tags">
+                    {% for tag in persona.tags %}
+                    <span class="tag-pill">{{ tag }}</span>
+                    {% endfor %}
+                </div>
+                </div>
+        </div>
+        </div>
+    {% endfor %}
+</div>
